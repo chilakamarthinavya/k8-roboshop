@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: debug
+  Namespace: roboshop
+spec:
+  containers:
+  - name: nginx
+    image: chilakamarthinavya/debug:v1
+    
