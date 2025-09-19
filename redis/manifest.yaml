@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: redis
-  Namespace: roboshop
+  namespace: roboshop
   #replica set labels
   labels:
     component: redis
@@ -32,7 +32,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: redis
-  Namespace: roboshop
+  namespace: roboshop
   labels:
     component: redis
     project: roboshop
